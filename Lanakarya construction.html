@@ -1,0 +1,883 @@
+<!DOCTYPE html>
+<!-- saved from url=(0040)https://lanakaryaconstruction.github.io/ -->
+<html lang="id"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <meta name="description" content="Lana Karya - General Contractor Jakarta. Spesialis konstruksi inovatif, renovasi, interior. Nothing is Impossible. Portofolio Tanatap series &amp; proyek kreatif.">
+    <meta name="keywords" content="kontraktor Jakarta, general contractor, renovasi rumah Jakarta, interior Jakarta, Tanatap Bekasi, Lanakarya">
+    <title>Lanakarya construction</title>
+
+    <!-- Bootstrap 5 -->
+    <link href="./Lanakarya construction_files/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <!-- AOS Animasi -->
+    <link href="./Lanakarya construction_files/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="./Lanakarya construction_files/lightbox.min.css">
+
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="./Lanakarya construction_files/animate.min.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="./Lanakarya construction_files/all.min.css">
+
+    <style>
+        :root {
+            --primary: #4a3c31;
+            --secondary: #6c5b4e;
+            --accent: #d4a373;
+            --light: #f8f6f2;
+        }
+        body { font-family: 'Arial', sans-serif; color: #333; background: var(--light); line-height: 1.6; }
+        .navbar { background: var(--primary) !important; }
+        .navbar-brand, .nav-link { color: white !important; }
+        .hero {
+            background: linear-gradient(rgba(74,60,49,0.6), rgba(74,60,49,0.8)), url('assets/hero-bg.jpg');
+            background-size: cover; background-position: center;
+            color: white; padding: 180px 15px 140px; text-align: center;
+            min-height: 80vh; display: flex; align-items: center;
+        }
+        @media (min-width: 992px) { .hero { padding: 220px 0 160px; } }
+/* Button Modern - DIPERBAIKI */
+.btn-hero {
+    background-color: var(--accent); /* Memberi warna dasar agar terlihat */
+    border: 2px solid var(--accent);
+    color: var(--primary) !important; /* Warna teks gelap agar kontras */
+    padding: 12px 30px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    transition: all 0.4s;
+    text-transform: uppercase;
+    position: relative;
+    z-index: 10; /* Memastikan tombol berada di lapisan atas */
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.btn-hero:hover {
+    background-color: transparent;
+    color: white !important;
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(212, 163, 115, 0.4);
+}
+
+
+/* --- PERBAIKAN LOGO HERO --- */
+.logo-grid {
+    display: flex;
+    flex-wrap: wrap; /* Memungkinkan logo turun ke bawah jika layar sangat sempit */
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+    gap: 10px; /* Gunakan gap, bukan margin negatif */
+}
+
+.logo-circle, .logo-main {
+    height: auto;
+    max-width: 100%; /* Mencegah gambar keluar layar */
+}
+
+/* Tampilan Mobile (HP) */
+@media (max-width: 576px) {
+    .logo-circle { 
+        max-height: 80px; 
+    }
+    .logo-main { 
+        max-height: 60px; 
+    }
+    .hero {
+        padding: 120px 15px 80px; /* Beri ruang agar tidak tertutup navbar */
+    }
+    .hero .lead {
+        font-size: 1.1rem !important; /* Ukuran slogan lebih masuk akal di HP */
+        letter-spacing: 2px;
+    }
+}
+
+/* Tampilan Tablet */
+@media (min-width: 768px) {
+    .logo-circle { max-height: 180px; }
+    .logo-main { max-height: 140px; }
+    .logo-grid { gap: 0; } /* Rapatkan kembali di layar besar */
+}
+
+/* Tampilan Desktop */
+@media (min-width: 992px) {
+    .logo-circle { max-height: 250px; }
+    .logo-main { max-height: 200px; }
+}
+
+@media (min-width: 768px) {
+    .logo-main   { max-height: 260px; }
+    .logo-circle { max-height: 300px; }
+    .vr          { min-height: 320px !important; }
+    .hero        { padding-top: 240px !important; padding-bottom: 180px !important; }
+}
+
+@media (min-width: 992px) {
+    .logo-main   { max-height: 320px; }
+    .logo-circle { max-height: 370px; }
+    .vr          { min-height: 400px !important; }
+}
+
+        .section-title {
+            font-size: 2.2rem; font-weight: bold; color: var(--primary);
+            text-transform: uppercase; margin-bottom: 40px; text-align: center;
+        }
+        @media (min-width: 768px) { .section-title { font-size: 2.8rem; margin-bottom: 50px; } }
+                /* Kartu layanan dengan desain lebih halus dan tombol detail */
+        .service-card {
+            background: #ffffff; 
+            border-radius: 15px; 
+            box-shadow: 0 10px 30px rgba(74, 60, 49, 0.05);
+            padding: 30px 20px;
+            text-align: center; 
+            transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1); 
+            height: 100%;
+            border: 1px solid rgba(74, 60, 49, 0.03);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between; /* Memastikan tombol di posisi bawah */
+        }
+
+        .service-card:hover { 
+            transform: translateY(-10px); 
+            box-shadow: 0 20px 40px rgba(74, 60, 49, 0.12);
+            border-color: var(--accent);
+        }
+
+        .service-icon {
+            width: 65px; 
+            height: 65px; 
+            border-radius: 50%; 
+            background: var(--light);
+            color: var(--accent);
+            display: flex; 
+            align-items: center; 
+            justify-content: center;
+            margin: 0 auto 20px; 
+            font-size: 1.6rem;
+            transition: 0.3s;
+        }
+
+        .service-card:hover .service-icon {
+            background: var(--accent);
+            color: white;
+        }
+
+        /* Desain Tombol Lihat Detail */
+        .btn-detail {
+            margin-top: 20px;
+            padding: 8px 20px;
+            font-size: 0.85rem;
+            font-weight: bold;
+            color: var(--primary);
+            border: 1px solid var(--accent);
+            border-radius: 25px;
+            text-decoration: none;
+            transition: all 0.3s;
+            display: inline-block;
+        }
+
+        .btn-detail:hover {
+            background-color: var(--accent);
+            color: white !important;
+        }
+
+
+       /* Update Galeri: Foto lebih kecil & sejajar horizontal */
+.project-gallery {
+    display: grid;
+    gap: 10px; /* Jarak antar foto lebih rapat */
+    grid-template-columns: repeat(3, 1fr); /* Mobile: 3 kolom */
+}
+
+@media (min-width: 768px) {
+    .project-gallery {
+        grid-template-columns: repeat(5, 1fr); /* Tablet: 5 kolom */
+    }
+}
+
+@media (min-width: 1200px) {
+    .project-gallery {
+        grid-template-columns: repeat(6, 1fr); /* Desktop: 6 kolom */
+    }
+}
+
+.project-gallery img {
+    width: 100%;
+    height: 140px;       /* Tinggi diperkecil agar foto tampak kecil */
+    object-fit: cover;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.project-gallery img:hover {
+    transform: scale(1.08); /* Efek zoom sedikit saat hover */
+}
+
+.project-gallery img:hover {
+    transform: scale(1.08); /* Efek hover sedikit membesar */
+}
+
+/* Menghilangkan padding figure agar lebih rapat secara horizontal */
+.project-gallery figure {
+    margin: 0;
+}
+
+.project-gallery img {
+    width: 100%;
+    height: 250px;       /* Tentukan tinggi tetap agar seragam */
+    object-fit: cover;    /* Memotong gambar agar pas tanpa distorsi */
+    border-radius: 8px;
+    transition: transform 0.5s;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    height: 250px;       /* Memberikan tinggi yang sama pada semua foto */
+    object-fit: cover;   /* Memastikan foto terpotong rapi, tidak gepeng */
+}
+
+.project-gallery img:hover {
+    transform: scale(1.05);
+}
+        .whatsapp-float {
+            position: fixed; width: 56px; height: 56px; bottom: 30px; right: 30px;
+            background-color: #25D366; color: white; border-radius: 50%; font-size: 28px;
+            box-shadow: 0 6px 20px rgba(0,0,0,0.25); z-index: 1000;
+            display: flex; align-items: center; justify-content: center; transition: all 0.3s;
+        }
+        .whatsapp-float:hover { transform: scale(1.12); box-shadow: 0 10px 30px rgba(37,213,102,0.4); }
+        footer { background: var(--primary); color: white; padding: 50px 0; }
+        .lang-toggle .form-check-input:checked { background-color: var(--accent); border-color: var(--accent); }
+        .lang-toggle-label { color: white; font-weight: bold; }
+        @media (max-width: 576px) {
+            .display-3 { font-size: 2.5rem; }
+            .lead.fs-3 { font-size: 1.4rem; }
+            .btn-lg { font-size: 1rem; padding: 0.75rem 2rem; }
+            .service-card { min-height: auto; padding: 30px 15px; }
+        }
+/* CSS untuk Peta yang jauh lebih kecil */
+.map-container {
+    overflow: hidden;
+    border-radius: 12px; 
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    position: relative;
+    height: 250px; /* Tinggi sangat ringkas di desktop */
+    max-width: 500px; /* Lebar dibatasi hanya 500px */
+    margin: 0 auto; 
+    border: 1px solid #ddd;
+}
+
+@media (max-width: 768px) {
+    .map-container {
+        height: 200px; /* Lebih kecil lagi di HP */
+        max-width: 90%; /* Mengikuti lebar layar HP */
+    }
+}
+
+.map-container iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+</style>
+    <meta name="google-site-verification" content="EUqJ6C1xvCesWhaPGr7Vlky5ifflym6rlMuSTGphOGE">
+</head>
+<body data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="70" data-aos-easing="ease-in-out" data-aos-duration="800" data-aos-delay="0">
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <div class="container">
+        <a class="navbar-brand fw-bold" href="https://lanakaryaconstruction.github.io/#" data-en="WELCOME" data-id="SELAMAT DATANG">SELAMAT DATANG</a>
+        
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        </div>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="https://lanakaryaconstruction.github.io/#home" data-en="Home" data-id="Home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="https://lanakaryaconstruction.github.io/#about" data-en="About" data-id="Tentang">Tentang</a></li>
+                    <li class="nav-item"><a class="nav-link" href="https://lanakaryaconstruction.github.io/#services" data-en="Services" data-id="Layanan">Layanan</a></li>
+                    <li class="nav-item"><a class="nav-link" href="https://lanakaryaconstruction.github.io/#projects" data-en="Projects" data-id="Project">Project</a></li>
+                    <li class="nav-item"><a class="nav-link" href="https://lanakaryaconstruction.github.io/#contact" data-en="Contact" data-id="Kontak">Kontak</a></li>
+                    <li class="nav-item"><a class="nav-link" href="https://lanakaryaconstruction.github.io/#location" data-en="Location" data-id="Lokasi">Lokasi</a></li>
+                </ul>
+                <div class="lang-toggle d-flex align-items-center ms-3">
+                    <span class="lang-toggle-label me-2" data-en="ID" data-id="ID">ID</span>
+                    <div class="form-check form-switch">
+                        <input class="form-check-input" type="checkbox" id="langSwitch" role="switch">
+                    </div>
+                    <span class="lang-toggle-label ms-2" data-en="EN" data-id="EN">EN</span>
+                </div>
+            </div>
+        
+    </nav>
+
+    <!-- Hero -->
+  <section id="home" class="hero">
+    <div class="container aos-init aos-animate" data-aos="zoom-out" data-aos-duration="1200">
+        <div class="logo-grid mb-4">
+            <img src="./Lanakarya construction_files/logo-circle.png" alt="Lana Karya Circle" class="img-fluid logo-circle animate__animated animate__fadeInLeft" style="max-height: 420px;">
+            <img src="./Lanakarya construction_files/logo-text.png" alt="Lana Karya Text" class="img-fluid logo-main animate__animated animate__fadeInRight">
+        </div>
+
+        <div class="mb-5">
+            <p class="lead fs-4 text-white mb-0 aos-init aos-animate" data-aos="fade-up" data-aos-delay="600" data-en="&quot;Nothing is Impossible&quot;" data-id="
+               &quot;Nothing is Impossible&quot;
+            ">
+               "Nothing is Impossible"
+            </p>
+        </div>
+
+        <div data-aos="fade-up" data-aos-delay="800" class="aos-init aos-animate">
+            <a href="https://wa.me/6285797584109?text=Halo%20Lana%20Karya%2C%20saya%20ingin%20berkonsultasi%20mengenai%20proyek%20konstruksi%20atau%20interior." class="btn btn-hero shadow-lg">
+                <i class="fab fa-whatsapp me-2"></i> 
+                <span data-en="Consult Now" data-id="Konsultasi Sekarang">Konsultasi Sekarang</span>
+            </a>
+        </div>
+    </div>
+</section>
+    <!-- Tentang Kami -->
+    <section id="about" class="py-5">
+        <div class="container">
+            <h2 class="section-title aos-init aos-animate" data-aos="fade-up" data-en="ABOUT US" data-id="TENTANG Kami">TENTANG Kami</h2>
+            <div class="row align-items-center">
+                <div class="col-md-6 mb-4 mb-md-0 aos-init aos-animate" data-aos="fade-right">
+                    <img src="./Lanakarya construction_files/about-image.jpg" alt="Tentang Kita Lanakarya" class="img-fluid rounded shadow" loading="lazy">
+                </div>
+                <div class="col-md-6 aos-init aos-animate" data-aos="fade-left">
+                    <p data-en="Building is a process of creating, establishing, or constructing something where the initial layout is arranged until it forms a certain shape. It involves various aspects such as planning, design, and execution." data-id="Membangun adalah proses menciptakan, mendirikan, atau menyusun sesuatu yang dimana awal hamparan disusun hingga terbentuk menjadi suatu wujud. Dan itu adalah proses yang dapat melibatkan berbagai aspek seperti perencanaan, desain, dan pelaksanaan.">Membangun adalah proses menciptakan, mendirikan, atau menyusun sesuatu yang dimana awal hamparan disusun hingga terbentuk menjadi suatu wujud. Dan itu adalah proses yang dapat melibatkan berbagai aspek seperti perencanaan, desain, dan pelaksanaan.</p>
+                    <p data-en="Lana Karya creates concepts facing many challenges in realizing buildings, turning seemingly impossible difficulties into possible through creativity. Because we believe 'Nothing is Impossible'." data-id="Lana Karya sendiri akan menciptakan suatu konsep yang dimana banyak sekali tantangan dalam proses terwujudnya bangunan, banyak sekali kesulitan yang terasa tidak mungkin, dan mencoba kreatif yang tadinya IMPOSSIBLE menjadi POSSIBLE. Karna kita yakin dengan kata &quot;Nothing is Impossible&quot;">Lana Karya sendiri akan menciptakan suatu konsep yang dimana banyak sekali tantangan dalam proses terwujudnya bangunan, banyak sekali kesulitan yang terasa tidak mungkin, dan mencoba kreatif yang tadinya IMPOSSIBLE menjadi POSSIBLE. Karna kita yakin dengan kata "Nothing is Impossible"</p>
+                    <p data-en="&quot;Nothing is impossible&quot; implies that with determination, effort, and perseverance, anything can be achieved regardless of difficulty. It promotes positive thinking and resilience." data-id="&quot;Nothing is impossible&quot; adalah ungkapan yang menyiratkan bahwa dengan tekad, usaha, dan ketekunan, seseorang dapat mencapai apa saja, tidak peduli seberapa besar atau sulit tujuannya. Frasa ini mendorong pemikiran positif dan semangat pantang menyerah.">"Nothing is impossible" adalah ungkapan yang menyiratkan bahwa dengan tekad, usaha, dan ketekunan, seseorang dapat mencapai apa saja, tidak peduli seberapa besar atau sulit tujuannya. Frasa ini mendorong pemikiran positif dan semangat pantang menyerah.</p>
+                    <p data-en="Lana Karya is confident in creating masterpieces in every moment." data-id="Lanakarya yakin dapat menciptakan karya di setiap momen.">Lanakarya yakin dapat menciptakan karya di setiap momen.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Layanan Kami -->
+            <section id="services" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="section-title aos-init aos-animate" data-aos="zoom-in" data-en="OUR SERVICES" data-id="LAYANAN KAMI">LAYANAN KAMI</h2>
+            
+            <div class="row g-4 justify-content-center">
+                <div class="col-lg-4 col-md-6 aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
+                    <div class="service-card">
+                        <div>
+                            <div class="service-icon"><i class="fas fa-cubes"></i></div>
+                            <h4 class="service-title" data-en="Construction Works" data-id="Pekerjaan Konstruksi">Pekerjaan Konstruksi</h4>
+                            <p class="service-desc" data-en="New builds for houses, cafes, pavilions, concrete &amp; steel structures." data-id="
+                                Pembangunan gedung, rumah, cafe, pavilion, struktur beton &amp;amp; baja berkualitas tinggi.
+                            ">
+                                Pembangunan gedung, rumah, cafe, pavilion, struktur beton &amp; baja berkualitas tinggi.
+                            </p>
+                        </div>
+                        <a href="https://wa.me/6285797584109?text=Halo%20Lana%20Karya%2C%20saya%20ingin%20tahu%20detail%20mengenai%20Pekerjaan%20Konstruksi." class="btn-detail" data-en="View Details" data-id="Lihat Detail">Lihat Detail</a>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 aos-init aos-animate" data-aos="fade-up" data-aos-delay="200">
+                    <div class="service-card">
+                        <div>
+                            <div class="service-icon"><i class="fas fa-tools"></i></div>
+                            <h4 class="service-title" data-en="Renovation" data-id="Renovasi">Renovasi</h4>
+                            <p class="service-desc" data-en="Revamping old buildings into modern, functional spaces." data-id="
+                                Merombak bangunan existing menjadi lebih fungsional, estetis, dan efisien secara biaya.
+                            ">
+                                Merombak bangunan existing menjadi lebih fungsional, estetis, dan efisien secara biaya.
+                            </p>
+                        </div>
+                        <a href="https://wa.me/6285797584109?text=Halo%20Lana%20Karya%2C%20saya%20ingin%20tahu%20detail%20mengenai%20layanan%20Renovasi." class="btn-detail" data-en="View Details" data-id="Lihat Detail">Lihat Detail</a>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 aos-init aos-animate" data-aos="fade-up" data-aos-delay="300">
+                    <div class="service-card">
+                        <div>
+                            <div class="service-icon"><i class="fas fa-home"></i></div>
+                            <h4 class="service-title" data-en="Interior / Exterior" data-id="Interior/Eksterior">Interior/Eksterior</h4>
+                            <p class="service-desc" data-en="Modern interior &amp; exterior design: wood finishing, and creative facade." data-id="
+                                Desain &amp;amp; realisasi interior modern, eksterior menarik, hingga finishing premium.
+                            ">
+                                Desain &amp; realisasi interior modern, eksterior menarik, hingga finishing premium.
+                            </p>
+                        </div>
+                        <a href="https://wa.me/6285797584109?text=Halo%20Lana%20Karya%2C%20saya%20ingin%20tahu%20detail%20mengenai%20Layanan%20Interior%20dan%20Eksterior." class="btn-detail" data-en="View Details" data-id="Lihat Detail">Lihat Detail</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Kami -->
+    <section id="projects" class="py-5">
+        <div class="container">
+            <h2 class="section-title aos-init aos-animate" data-aos="fade-up" data-en="OUR PROJECTS" data-id="PROJECT KAMI">PROJECT KAMI</h2>
+            <p class="text-center mb-4 aos-init aos-animate" data-aos="fade-up" data-aos-delay="200" data-en="Creating wide employment opportunities by building efficiently, accurately, and quickly. Idealism teaches us to always compete creatively and innovatively, encouraging us to focus and realize new ideas." data-id="
+                Menciptakan lapangan kerja yang luas membangun secara efisien, akurat dan cepat. Idealis mengajarkan kita untuk selalu bersaing secara kreatif dan inovatif, mendorong kita untuk fokus dan mewujudkan ide-ide baru.
+            ">
+                Menciptakan lapangan kerja yang luas membangun secara efisien, akurat dan cepat. Idealis mengajarkan kita untuk selalu bersaing secara kreatif dan inovatif, mendorong kita untuk fokus dan mewujudkan ide-ide baru.
+            </p>
+            <p class="text-center mb-5 aos-init aos-animate" data-aos="fade-up" data-aos-delay="300" data-en="“Lana Karya collaborates”, ready to provide improvisation solutions to existing difficulties." data-id="
+                “Lanakarya berkolaborasi”, siap memberikan solusi improvisasi terhadap kesulitan yang ada.
+            ">
+                “Lanakarya berkolaborasi”, siap memberikan solusi improvisasi terhadap kesulitan yang ada.
+            </p>
+        <div class="project-gallery mb-5 aos-init aos-animate" data-aos="fade-up">
+            <a href="./Lanakarya construction_files/projek-kami-1.jpg" data-lightbox="gallery-main" data-title="Lana Karya Project">
+                <img src="./Lanakarya construction_files/projek-kami-1.jpg" alt="Proyek 1" loading="lazy">
+            </a>
+            <a href="./Lanakarya construction_files/projek-kami-2.jpg" data-lightbox="gallery-main" data-title="Lana Karya Project">
+                <img src="./Lanakarya construction_files/projek-kami-2.jpg" alt="Proyek 2" loading="lazy">
+            </a>
+            <a href="./Lanakarya construction_files/projek-kami-3.jpg" data-lightbox="gallery-main" data-title="Lana Karya Project">
+                <img src="./Lanakarya construction_files/projek-kami-3.jpg" alt="Proyek 3" loading="lazy">
+            </a>
+            <a href="./Lanakarya construction_files/projek-kami-4.jpg" data-lightbox="gallery-main" data-title="Lana Karya Project">
+                <img src="./Lanakarya construction_files/projek-kami-4.jpg" alt="Proyek 4" loading="lazy">
+            </a>
+            <a href="./Lanakarya construction_files/projek-kami-5.jpg" data-lightbox="gallery-main" data-title="Lana Karya Project">
+                <img src="./Lanakarya construction_files/projek-kami-5.jpg" alt="Proyek 5" loading="lazy">
+            </a>
+            <a href="./Lanakarya construction_files/projek-kami-6.jpg" data-lightbox="gallery-main" data-title="Lana Karya Project">
+                <img src="./Lanakarya construction_files/projek-kami-6.jpg" alt="Proyek 6" loading="lazy">
+            </a>
+            <a href="./Lanakarya construction_files/projek-kami-8.jpeg" data-lightbox="gallery-main" data-title="Lana Karya Project">
+                <img src="./Lanakarya construction_files/projek-kami-8.jpeg" alt="Proyek 8" loading="lazy">
+            </a>
+            <a href="./Lanakarya construction_files/projek-kami-9.jpeg" data-lightbox="gallery-main" data-title="Lana Karya Project">
+                <img src="./Lanakarya construction_files/projek-kami-9.jpeg" alt="Proyek 9" loading="lazy">
+            </a>
+            <a href="./Lanakarya construction_files/projek-kami-10.jpeg" data-lightbox="gallery-main" data-title="Lana Karya Project">
+                <img src="./Lanakarya construction_files/projek-kami-10.jpeg" alt="Proyek 10" loading="lazy">
+            </a>
+             <a href="./Lanakarya construction_files/projek-kami-11.jpeg" data-lightbox="gallery-main" data-title="Lana Karya Project">
+                <img src="./Lanakarya construction_files/projek-kami-11.jpeg" alt="Proyek 11" loading="lazy">
+            </a>
+             <a href="./Lanakarya construction_files/projek-kami-12.jpeg" data-lightbox="gallery-main" data-title="Lana Karya Project">
+                <img src="./Lanakarya construction_files/projek-kami-12.jpeg" alt="Proyek 12" loading="lazy">   
+             </a>
+             <a href="./Lanakarya construction_files/projek-kami-13.jpeg" data-lightbox="gallery-main" data-title="Lana Karya Project">
+                <img src="./Lanakarya construction_files/projek-kami-13.jpeg" alt="Proyek 13" loading="lazy">   
+             </a>
+             <a href="./Lanakarya construction_files/projek-kami-14.jpeg" data-lightbox="gallery-main" data-title="Lana Karya Project">
+                <img src="./Lanakarya construction_files/projek-kami-14.jpeg" alt="Proyek 14" loading="lazy">   
+                </a>
+             <a href="./Lanakarya construction_files/projek-kami-15.jpeg" data-lightbox="gallery-main" data-title="Lana Karya Project">
+                <img src="./Lanakarya construction_files/projek-kami-15.jpeg" alt="Proyek 15" loading="lazy">    
+                </a>
+             <a href="./Lanakarya construction_files/projek-kami-16.jpeg" data-lightbox="gallery-main" data-title="Lana Karya Project">
+                <img src="./Lanakarya construction_files/projek-kami-16.jpeg" alt="Proyek 18" loading="lazy">   
+               </a>
+             <a href="./Lanakarya construction_files/projek-kami-18.jpeg" data-lightbox="gallery-main" data-title="Lana Karya Project">
+                <img src="./Lanakarya construction_files/projek-kami-18.jpeg" alt="Proyek 18" loading="lazy">   
+                  </a>
+             <a href="./Lanakarya construction_files/projek-kami-19.jpeg" data-lightbox="gallery-main" data-title="Lana Karya Project">
+                <img src="./Lanakarya construction_files/projek-kami-19.jpeg" alt="Proyek 19" loading="lazy">   
+                  </a>
+             <a href="./Lanakarya construction_files/projek-kami-20.jpg" data-lightbox="gallery-main" data-title="Lana Karya Project">
+                <img src="./Lanakarya construction_files/projek-kami-20.jpg" alt="Proyek 20" loading="lazy">  
+           </a>         
+        </div>
+    </div>
+</section>
+
+
+            <h3 class="section-title mt-5 aos-init aos-animate" data-aos="zoom-in" data-en="OTHER PROJECTS" data-id="PROJECT LAINNYA">PROJECT LAINNYA</h3>
+
+            <div class="accordion" id="projectsAccordion">
+
+               <!-- Tanatap Bekasi -->
+                <div class="accordion-item aos-init aos-animate" data-aos="fade-right" data-aos-delay="100">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#tanatapBekasi">
+                            <span data-en="TANATAP BEKASI" data-id="TANATAP BEKASI">TANATAP BEKASI</span>
+                        </button>
+                    </h2>
+                    <div id="tanatapBekasi" class="accordion-collapse collapse" data-bs-parent="#projectsAccordion">
+    <div class="accordion-body">
+        <div class="project-gallery">
+            
+            <a href="./Lanakarya construction_files/tanatap-bekasi-1.jpg" data-lightbox="tanatap-bekasi" data-title="Tanatap Bekasi: Integrasi struktur beton ekspos dengan elemen alam.">
+                <img src="./Lanakarya construction_files/tanatap-bekasi-1.jpg" alt="Eksterior ikonik Tanatap Bekasi dengan desain arsitektur modern" loading="lazy">
+            </a>
+            <a href="./Lanakarya construction_files/tanatap-bekasi-2.jpg" data-lightbox="tanatap-bekasi" data-title="Tanatap Bekasi: Area taman amphitheater yang fungsional.">
+                <img src="./Lanakarya construction_files/tanatap-bekasi-2.jpg" alt="Area taman dan tempat duduk outdoor Tanatap Bekasi" loading="lazy">
+            </a>
+            <a href="./Lanakarya construction_files/tanatap-bekasi-3.jpg" data-lightbox="tanatap-bekasi" data-title="Tanatap Bekasi: Detail pengerjaan fasad melengkung.">
+                <img src="./Lanakarya construction_files/tanatap-bekasi-3.jpg" alt="Detail konstruksi dinding melengkung khas Tanatap" loading="lazy">
+            </a>
+            <a href="./Lanakarya construction_files/tanatap-bekasi-4.jpg" data-lightbox="tanatap-bekasi" data-title="Tanatap Bekasi: Pencahayaan alami pada area interior.">
+                <img src="./Lanakarya construction_files/tanatap-bekasi-4.jpg" alt="Interior Tanatap Bekasi dengan pencahayaan alami" loading="lazy">
+            </a>
+            <a href="./Lanakarya construction_files/tanatap-bekasi-5.jpg" data-lightbox="tanatap-bekasi" data-title="Tanatap Bekasi: Hubungan harmonis antara ruang dalam dan luar.">
+                <img src="./Lanakarya construction_files/tanatap-bekasi-5.jpg" alt="Transisi area indoor dan outdoor Tanatap" loading="lazy">
+            </a>
+            <a href="./Lanakarya construction_files/tanatap-bekasi-6.jpg" data-lightbox="tanatap-bekasi" data-title="Tanatap Bekasi: Hasil akhir konstruksi berkualitas premium.">
+                <img src="./Lanakarya construction_files/tanatap-bekasi-6.jpg" alt="Perspektif luas bangunan Tanatap Bekasi" loading="lazy">
+            </a>
+      
+            </div>
+           </div>
+          </div>
+         </div>
+
+                <!-- Tanatap Ampera -->
+                <div class="accordion-item aos-init aos-animate" data-aos="fade-right" data-aos-delay="200">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#tanatapAmpera">
+                            <span data-en="TANATAP AMPERA" data-id="TANATAP AMPERA">TANATAP AMPERA</span>
+                        </button>
+                    </h2>
+                    <div id="tanatapAmpera" class="accordion-collapse collapse" data-bs-parent="#projectsAccordion">
+    <div class="accordion-body">
+        <div class="project-gallery">
+            <a href="./Lanakarya construction_files/tanatap-ampera-1.jpg" data-lightbox="tanatap-ampera" data-title="Tanatap Ampera: Konsep 'Garden in the City'.">
+                <img src="./Lanakarya construction_files/tanatap-ampera-1.jpg" alt="Pemandangan utama bangunan Tanatap Ampera" loading="lazy">
+            </a>
+            <a href="./Lanakarya construction_files/tanatap-ampera-2.jpg" data-lightbox="tanatap-ampera" data-title="Tanatap Ampera: Detail struktur baja dan kaca.">
+                <img src="./Lanakarya construction_files/tanatap-ampera-2.jpg" alt="Konstruksi kaca dan baja modern di Ampera" loading="lazy">
+            </a>
+            <a href="./Lanakarya construction_files/tanatap-ampera-3.jpg" data-lightbox="tanatap-ampera" data-title="Tanatap Ampera: Ruang komunal yang dinamis.">
+                <img src="./Lanakarya construction_files/tanatap-ampera-3.jpg" alt="Suasana area duduk komunal Tanatap Ampera" loading="lazy">
+            </a>
+            <a href="./Lanakarya construction_files/tanatap-ampera-4.jpg" data-lightbox="tanatap-ampera" data-title="Tanatap Ampera: Estetika minimalis industrial.">
+                <img src="./Lanakarya construction_files/tanatap-ampera-4.jpg" alt="Detail finishing dinding industrial" loading="lazy">
+            </a>
+            <a href="./Lanakarya construction_files/tanatap-ampera-5.jpg" data-lightbox="tanatap-ampera" data-title="Tanatap Ampera: Integrasi pohon eksisting ke dalam desain.">
+                <img src="./Lanakarya construction_files/tanatap-ampera-5.jpg" alt="Pohon di dalam area bangunan Tanatap" loading="lazy">
+            </a>
+            <a href="./Lanakarya construction_files/tanatap-ampera-6.jpg" data-lightbox="tanatap-ampera" data-title="Tanatap Ampera: Pencahayaan dramatis di malam hari.">
+                <img src="./Lanakarya construction_files/tanatap-ampera-6.jpg" alt="Tampilan malam hari gedung Tanatap Ampera" loading="lazy">
+     
+                                </a> 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tanatap Meruya -->
+                <div class="accordion-item aos-init aos-animate" data-aos="fade-right" data-aos-delay="300">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#tanatapMeruya">
+                            <span data-en="TANATAP MERUYA" data-id="TANATAP MERUYA">TANATAP MERUYA</span>
+                        </button>
+                    </h2>
+                    <div id="tanatapMeruya" class="accordion-collapse collapse" data-bs-parent="#projectsAccordion">
+    <div class="accordion-body">
+        <div class="project-gallery">
+            <a href="./Lanakarya construction_files/tanatap-meruya-1.jpg" data-lightbox="tanatap-meruya" data-title="Tanatap Meruya: Pionir cafe dengan desain labirin hijau.">
+                <img src="./Lanakarya construction_files/tanatap-meruya-1.jpg" alt="Arsitektur ikonik Tanatap Meruya Jakarta Barat" loading="lazy">
+            </a>
+            <a href="./Lanakarya construction_files/tanatap-meruya-2.jpg" data-lightbox="tanatap-meruya" data-title="Tanatap Meruya: Penggunaan material bata merah yang estetik.">
+                <img src="./Lanakarya construction_files/tanatap-meruya-2.jpg" alt="Detail dinding bata merah Tanatap Meruya" loading="lazy">
+            </a>
+            <a href="./Lanakarya construction_files/tanatap-meruya-3.jpg" data-lightbox="tanatap-meruya" data-title="Tanatap Meruya: Area atap (rooftop) yang fungsional.">
+                <img src="./Lanakarya construction_files/tanatap-meruya-3.jpg" alt="Area rooftop garden Tanatap Meruya" loading="lazy">
+            </a>
+            <a href="./Lanakarya construction_files/tanatap-meruya-4.jpg" data-lightbox="tanatap-meruya" data-title="Tanatap Meruya: Koridor dengan permainan cahaya dan bayangan.">
+                <img src="./Lanakarya construction_files/tanatap-meruya-4.jpg" alt="Koridor terbuka Tanatap Meruya" loading="lazy">
+            </a>
+            <a href="./Lanakarya construction_files/tanatap-meruya-5.jpg" data-lightbox="tanatap-meruya" data-title="Tanatap Meruya: Desain interior minimalis hangat.">
+                <img src="./Lanakarya construction_files/tanatap-meruya-5.jpg" alt="Suasana interior coffee shop Meruya" loading="lazy">
+            </a>
+            <a href="./Lanakarya construction_files/tanatap-meruya-6.jpg" data-lightbox="tanatap-meruya" data-title="Tanatap Meruya: Kolaborasi seni dan arsitektur.">
+                <img src="./Lanakarya construction_files/tanatap-meruya-6.jpg" alt="Detail sudut arsitektural Tanatap Meruya" loading="lazy">
+        
+                                </a> 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tanatap Semarang -->
+                <div class="accordion-item aos-init aos-animate" data-aos="fade-right" data-aos-delay="400">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#tanatapSemarang">
+                            <span data-en="TANATAP SEMARANG" data-id="TANATAP SEMARANG">TANATAP SEMARANG</span>
+                        </button>
+                    </h2>
+                    <div id="tanatapSemarang" class="accordion-collapse collapse" data-bs-parent="#projectsAccordion">
+    <div class="accordion-body">
+        <div class="project-gallery">
+            <a href="./Lanakarya construction_files/tanatap-semarang-1.jpg" data-lightbox="tanatap-semarang" data-title="Tanatap Semarang: Arsitektur modern yang menyatu dengan lanskap kota Semarang.">
+                <img src="./Lanakarya construction_files/tanatap-semarang-1.jpg" alt="Fasad depan Tanatap Semarang dengan desain kontemporer" loading="lazy">
+            </a>
+            <a href="./Lanakarya construction_files/tanatap-semarang-2.jpg" data-lightbox="tanatap-semarang" data-title="Tanatap Semarang: Permainan tekstur material beton yang estetik.">
+                <img src="./Lanakarya construction_files/tanatap-semarang-2.jpg" alt="Detail material dinding dan eksterior Tanatap Semarang" loading="lazy">
+            </a>
+            <a href="./Lanakarya construction_files/tanatap-semarang-3.jpg" data-lightbox="tanatap-semarang" data-title="Tanatap Semarang: Area semi-outdoor dengan sirkulasi udara optimal.">
+                <img src="./Lanakarya construction_files/tanatap-semarang-3.jpg" alt="Area tempat duduk terbuka Tanatap Semarang" loading="lazy">
+            </a>
+            <a href="./Lanakarya construction_files/tanatap-semarang-4.jpg" data-lightbox="tanatap-semarang" data-title="Tanatap Semarang: Detail konstruksi atap yang inovatif.">
+                <img src="./Lanakarya construction_files/tanatap-semarang-4.jpg" alt="Konstruksi bagian atap unik khas proyek Lana Karya" loading="lazy">
+            </a>
+            <a href="./Lanakarya construction_files/tanatap-semarang-5.jpg" data-lightbox="tanatap-semarang" data-title="Tanatap Semarang: Ruang komunal dengan konsep amphitheater.">
+                <img src="./Lanakarya construction_files/tanatap-semarang-5.jpg" alt="Area tangga dan tempat duduk berjenjang" loading="lazy">
+            </a>
+            <a href="./Lanakarya construction_files/tanatap-semarang-6.jpg" data-lightbox="tanatap-semarang" data-title="Tanatap Semarang: Harmonisasi pencahayaan dan elemen hijau.">
+                <img src="./Lanakarya construction_files/tanatap-semarang-6.jpg" alt="Pemandangan malam hari area taman Tanatap Semarang" loading="lazy">
+        
+                               </a> 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tanatap Matraman -->
+                <div class="accordion-item aos-init aos-animate" data-aos="fade-right" data-aos-delay="500">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#tanatapMatraman">
+                            <span data-en="TANATAP MATRAMAN" data-id="TANATAP MATRAMAN">TANATAP MATRAMAN</span>
+                        </button>
+                    </h2>
+                    <div id="tanatapMatraman" class="accordion-collapse collapse" data-bs-parent="#projectsAccordion">
+    <div class="accordion-body">
+        <div class="project-gallery">
+            <a href="./Lanakarya construction_files/tanatap-matraman-1.jpg" data-lightbox="tanatap-matraman" data-title="Tanatap Matraman: Adaptasi bangunan modern di tengah kawasan historis Matraman.">
+                <img src="./Lanakarya construction_files/tanatap-matraman-1.jpg" alt="Eksterior bangunan Tanatap Matraman Jakarta" loading="lazy">
+            </a>
+            <a href="./Lanakarya construction_files/tanatap-matraman-2.jpg" data-lightbox="tanatap-matraman" data-title="Tanatap Matraman: Penggunaan material transparan untuk pencahayaan alami.">
+                <img src="./Lanakarya construction_files/tanatap-matraman-2.jpg" alt="Detail jendela dan pencahayaan interior" loading="lazy">
+            </a>
+            <a href="./Lanakarya construction_files/tanatap-matraman-3.jpg" data-lightbox="tanatap-matraman" data-title="Tanatap Matraman: Detail finishing interior kayu dan semen ekspos.">
+                <img src="./Lanakarya construction_files/tanatap-matraman-3.jpg" alt="Interior minimalis industrial Tanatap Matraman" loading="lazy">
+            </a>
+            <a href="./Lanakarya construction_files/tanatap-matraman-4.jpg" data-lightbox="tanatap-matraman" data-title="Tanatap Matraman: Optimalisasi ruang terbatas menjadi area estetik.">
+                <img src="./Lanakarya construction_files/tanatap-matraman-4.jpg" alt="Sudut ruangan fungsional di Tanatap Matraman" loading="lazy">
+            </a>
+            <a href="./Lanakarya construction_files/tanatap-matraman-5.jpg" data-lightbox="tanatap-matraman" data-title="Tanatap Matraman: Fasad ikonik yang menjadi landmark baru di Jakarta Pusat.">
+                <img src="./Lanakarya construction_files/tanatap-matraman-5.jpg" alt="Fasad ikonik pengerjaan Lana Karya" loading="lazy">
+            </a>
+            <a href="./Lanakarya construction_files/tanatap-matraman-6.jpg" data-lightbox="tanatap-matraman" data-title="Tanatap Matraman: Kombinasi sempurna antara fungsionalitas dan seni.">
+                <img src="./Lanakarya construction_files/tanatap-matraman-6.jpg" alt="Hasil akhir pembangunan Tanatap Matraman" loading="lazy">
+                    </a> 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Stalk SCBD -->
+                <div class="accordion-item aos-init aos-animate" data-aos="fade-right" data-aos-delay="600">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#stalkScbd">
+                            <span data-en="STALK - SCBD" data-id="STALK - SCBD">STALK - SCBD</span>
+                        </button>
+                    </h2>
+                   <div id="stalkScbd" class="accordion-collapse collapse" data-bs-parent="#projectsAccordion">
+    <div class="accordion-body">
+        <div class="project-gallery">
+            <a href="./Lanakarya construction_files/stalk-scbd-1.jpg" data-lightbox="stalk-Scbd" data-title="Stalk SCBD: Desain fasad futuristik di pusat bisnis Jakarta.">
+                <img src="./Lanakarya construction_files/stalk-scbd-1.jpg" alt="Eksterior gedung Stalk SCBD dengan desain modern" loading="lazy">
+            </a>
+            <a href="./Lanakarya construction_files/stalk-scbd-2.jpg" data-lightbox="stalk-Scbd" data-title="Stalk SCBD: Detail konstruksi struktur baja yang presisi.">
+                <img src="./Lanakarya construction_files/stalk-scbd-2.jpg" alt="Detail pengerjaan struktur baja gedung komersial" loading="lazy">
+            </a>
+            <a href="./Lanakarya construction_files/stalk-scbd-3.jpg" data-lightbox="stalk-Scbd" data-title="Stalk SCBD: Pencahayaan interior yang menciptakan suasana elegan.">
+                <img src="./Lanakarya construction_files/stalk-scbd-3.jpg" alt="Suasana interior Stalk SCBD dengan lighting mewah" loading="lazy">
+            </a>
+            <a href="./Lanakarya construction_files/stalk-scbd-4.jpg" data-lightbox="stalk-Scbd" data-title="Stalk SCBD: Penggunaan material premium pada area lounge.">
+                <img src="./Lanakarya construction_files/stalk-scbd-4.jpg" alt="Detail finishing material interior premium" loading="lazy">
+            </a>
+            <a href="./Lanakarya construction_files/stalk-scbd-5.jpg" data-lightbox="stalk-Scbd" data-title="Stalk SCBD: Integrasi elemen kayu dan logam dalam desain.">
+                <img src="./Lanakarya construction_files/stalk-scbd-5.jpg" alt="Kombinasi material kayu dan logam pada proyek SCBD" loading="lazy">
+            </a>
+            <a href="./Lanakarya construction_files/stalk-scbd-6.jpg" data-lightbox="stalk-Scbd" data-title="Stalk SCBD: Landmark kuliner baru dengan arsitektur ikonik.">
+                <img src="./Lanakarya construction_files/stalk-scbd-6.jpg" alt="Hasil akhir pembangunan proyek Stalk SCBD" loading="lazy">
+            </a>
+        </div>
+    </div>
+</div>
+                <!-- Vino Barel -->
+                <div class="accordion-item aos-init aos-animate" data-aos="fade-right" data-aos-delay="700">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#vinoBarel">
+                            <span data-en="VINO BAREL" data-id="VINO BAREL">VINO BAREL</span>
+                        </button>
+                    </h2>
+                    <div id="vinoBarel" class="accordion-collapse collapse" data-bs-parent="#projectsAccordion">
+    <div class="accordion-body">
+        <div class="project-gallery">
+            <a href="./Lanakarya construction_files/vino-barel-1.jpg" data-lightbox="vino-barel" data-title="Vino Barel: Transformasi ruang komersial dengan gaya industrial modern.">
+                <img src="./Lanakarya construction_files/vino-barel-1.jpg" alt="Tampilan depan outlet Vino Barel" loading="lazy">
+            </a>
+            <a href="./Lanakarya construction_files/vino-barel-2.jpg" data-lightbox="vino-barel" data-title="Vino Barel: Detail bar custom dengan pengerjaan tangan berkualitas.">
+                <img src="./Lanakarya construction_files/vino-barel-2.jpg" alt="Pengerjaan interior area bar custom" loading="lazy">
+            </a>
+            <a href="./Lanakarya construction_files/vino-barel-3.jpg" data-lightbox="vino-barel" data-title="Vino Barel: Optimasi pencahayaan untuk kenyamanan pengunjung.">
+                <img src="./Lanakarya construction_files/vino-barel-3.jpg" alt="Sistem pencahayaan interior Vino Barel" loading="lazy">
+            </a>
+            <a href="./Lanakarya construction_files/vino-barel-4.jpg" data-lightbox="vino-barel" data-title="Vino Barel: Pemanfaatan material ekspos yang estetik.">
+                <img src="./Lanakarya construction_files/vino-barel-4.jpg" alt="Detail dinding semen ekspos dan elemen kayu" loading="lazy">
+            </a>
+            <a href="./Lanakarya construction_files/vino-barel-5.jpg" data-lightbox="vino-barel" data-title="Vino Barel: Tata letak furnitur yang ergonomis dan fungsional.">
+                <img src="./Lanakarya construction_files/vino-barel-5.jpg" alt="Layout area duduk pengunjung Vino Barel" loading="lazy">
+            </a>
+            <a href="./Lanakarya construction_files/vino-barel-6.jpg" data-lightbox="vino-barel" data-title="Vino Barel: Kesatuan desain yang memberikan identitas kuat pada brand.">
+                <img src="./Lanakarya construction_files/vino-barel-6.jpg" alt="Perspektif menyeluruh interior Vino Barel" loading="lazy">
+            </a>
+        </div>
+    </div>
+</div>
+
+               <!-- Moja Roja GBK -->
+                <div class="accordion-item aos-init aos-animate" data-aos="fade-right" data-aos-delay="700">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#mojarojagbk">
+                            <span data-en="MOJA ROJA GBK" data-id="MOJA ROJA GBK">MOJA ROJA GBK</span>
+                        </button>
+                    </h2>
+                   <div id="mojarojagbk" class="accordion-collapse collapse" data-bs-parent="#projectsAccordion">
+    <div class="accordion-body">
+        <div class="project-gallery">
+            <a href="./Lanakarya construction_files/moja-roja-gbk-1.jpg" data-lightbox="moja-roja-gbk" data-title="Moja Roja GBK: Destinasi rekreasi kreatif dengan desain penuh warna.">
+                <img src="./Lanakarya construction_files/moja-roja-gbk-1.jpg" alt="Area masuk Moja Roja GBK yang artistik" loading="lazy">
+            </a>
+            <a href="./Lanakarya construction_files/moja-roja-gbk-2.jpg" data-lightbox="moja-roja-gbk" data-title="Moja Roja GBK: Pengerjaan instalasi seni yang presisi.">
+                <img src="./Lanakarya construction_files/moja-roja-gbk-2.jpg" alt="Detail instalasi kreatif Moja Roja" loading="lazy">
+            </a>
+            <a href="./Lanakarya construction_files/moja-roja-gbk-3.jpg" data-lightbox="moja-roja-gbk" data-title="Moja Roja GBK: Ruang publik yang mengedepankan pengalaman visual.">
+                <img src="./Lanakarya construction_files/moja-roja-gbk-3.jpg" alt="Interior area bermain dengan desain unik" loading="lazy">
+            </a>
+            <a href="./Lanakarya construction_files/moja-roja-gbk-4.jpg" data-lightbox="moja-roja-gbk" data-title="Moja Roja GBK: Detail finishing lantai dan dinding yang ceria.">
+                <img src="./Lanakarya construction_files/moja-roja-gbk-4.jpg" alt="Pengerjaan dekorasi dinding warna-warni" loading="lazy">
+            </a>
+            <a href="./Lanakarya construction_files/moja-roja-gbk-5.jpg" data-lightbox="moja-roja-gbk" data-title="Moja Roja GBK: Adaptasi ruang di kawasan olahraga nasional (GBK).">
+                <img src="./Lanakarya construction_files/moja-roja-gbk-5.jpg" alt="Perspektif ruang kreatif Moja Roja di GBK" loading="lazy">
+            </a>
+            <a href="./Lanakarya construction_files/moja-roja-gbk-6.jpg" data-lightbox="moja-roja-gbk" data-title="Moja Roja GBK: Kolaborasi konstruksi dan seni untuk hiburan keluarga.">
+                <img src="./Lanakarya construction_files/moja-roja-gbk-6.jpg" alt="Hasil akhir proyek kreatif Moja Roja GBK" loading="lazy">
+            </a>
+        </div>
+    </div>
+</div>
+
+            </div>
+        </div>
+    
+
+    <!-- Kontak -->
+    <section id="contact" class="py-5 bg-light">
+    <div class="container text-center aos-init aos-animate" data-aos="fade-up">
+        <h2 class="section-title" style="color: #4a3c31 !important;" data-en="CONTACT" data-id="KONTAK">KONTAK</h2>
+        <p><strong data-en="Phone / WhatsApp:" data-id="Telepon / WhatsApp:">Telepon / WhatsApp:</strong> +62 857-9758-4109</p>
+        
+        <p>
+            <strong data-en="Email:" data-id="Email:">Email:</strong> 
+            <a href="mailto:lanakaryaconstruction@gmail.com?subject=Tanya%20Proyek%20Lana%20Karya&amp;body=Halo%20Lana%20Karya%2C%20saya%20ingin%20berkonsultasi..." class="text-decoration-none" style="color: #4a3c31;">
+                lanakaryaconstruction@gmail.com
+            </a>
+        </p>
+        
+        <p><strong data-en="Instagram:" data-id="Instagram:">Instagram:</strong> <a href="https://www.instagram.com/lanakaryaconstruction/" target="_blank" rel="noopener noreferrer">@lanakaryaconstruction</a></p>
+        
+        <div class="mt-4 shadow-sm rounded overflow-hidden" style="max-width: 800px; margin: 0 auto;">
+           
+        </div>
+    </div>
+</section>
+<section id="location" class="py-5 bg-light">
+    <div class="container">
+        <h2 class="text-center mb-4 fw-bold aos-init aos-animate" data-aos="fade-up" style="font-size: 1.5rem; color: var(--primary);">LOKASI KAMI</h2>
+        
+        <div class="row justify-content-center">
+            <div class="col-lg-6 aos-init aos-animate" data-aos="zoom-in">
+                
+                <div class="map-container">
+                    <iframe src="./Lanakarya construction_files/embed.html" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>/maps/embed?pb=!1m18!1m12!1m3!1d3966.3774369627467!2d106.72896307409616!3d-6.213852160862047!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f70079cfd595%3A0x469118e7b1e83598!2sLanakarya%20Construction!5e0!3m2!1sid!2sus!4v1769058494209!5m2!1sid!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"&gt;947792623348!3d-6.229746452292398!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f3e059102f43%3A0x60098f7e73e97022!2sJakarta!5e0!3m2!1sid!2sid!4v1700000000000!5m2!1sid!2sid" 
+                        allowfullscreen="" 
+                        loading="lazy"&gt;
+                    
+                </div>
+                
+                <div class="text-center mt-3">
+                    <p class="mb-0" style="font-size: 0.9rem;"><strong>Lana Karya Construction</strong></p>
+                    <p class="text-muted" style="font-size: 0.85rem;" data-en="Jakarta, Indonesia" data-id="Jakarta, Indonesia">Jakarta, Indonesia</p>
+                      <a href="https://maps.app.goo.gl/81AXN6ZZyivPFFGc8" target="_blank" class="btn btn-outline-dark btn-sm" style="border-radius: 20px; font-size: 0.75rem; padding: 4px 15px;">
+                        <i class="fas fa-directions me-1"></i> Petunjuk Arah
+                    </a>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+    <!-- Footer -->
+    <footer class="text-center">
+        <div class="container">
+            <p data-en="© 2026 Lana Karya. All rights reserved." data-id="© 2026 Lana Karya. All rights reserved.">© 2026 Lana Karya. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp -->
+    <a href="https://wa.me/6285797584109?text=Halo%20Lana%20Karya%2C%20saya%20ingin%20berkonsultasi%20mengenai%20proyek%20konstruksi%20atau%20interior." class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="Chat via WhatsApp" data-en-href="https://wa.me/6285797584109?text=Hello%20Lana%20Karya%2C%20I%20would%20like%20to%20consult%20about%20construction%20or%20interior%20project.">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Scripts -->
+    <script src="./Lanakarya construction_files/bootstrap.bundle.min.js.download" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="./Lanakarya construction_files/aos.js.download"></script>
+    <script>
+    AOS.init({
+        duration: 800,
+        once: true,
+        easing: 'ease-in-out',
+        offset: 100
+    });
+
+    const langSwitch = document.getElementById('langSwitch');
+    const elements = document.querySelectorAll('[data-en]');
+    const waFloat = document.querySelector('.whatsapp-float');
+    const waHeroBtn = document.querySelector('.hero .btn');
+
+    // 1. Simpan teks asli Indonesia ke dalam atribut data-id saat pertama kali load
+    elements.forEach(el => {
+        el.setAttribute('data-id', el.innerHTML);
+    });
+
+    function setLanguage(isEnglish) {
+        elements.forEach(el => {
+            const enText = el.getAttribute('data-en');
+            const idText = el.getAttribute('data-id');
+            
+            // Tukar konten berdasarkan status switch
+            el.innerHTML = isEnglish ? enText : idText;
+        });
+
+        // Perbaikan Link WhatsApp (Floating & Hero Button)
+        const waLinkID = "https://wa.me/6285797584109?text=Halo%20Lana%20Karya%2C%20saya%20ingin%20berkonsultasi%20mengenai%20proyek%20konstruksi%20atau%20interior.";
+        const waLinkEN = "https://wa.me/6285797584109?text=Hello%20Lana%20Karya%2C%20I%20would%20like%20to%20consult%20about%20construction%20or%20interior%20project.";
+        
+        waFloat.href = isEnglish ? waLinkEN : waLinkID;
+        if(waHeroBtn) waHeroBtn.href = isEnglish ? waLinkEN : waLinkID;
+
+        document.documentElement.lang = isEnglish ? 'en' : 'id';
+    }
+
+    langSwitch.addEventListener('change', function() {
+        setLanguage(this.checked);
+    });
+
+    // Inisialisasi awal
+    setLanguage(false);
+</script>
+<script src="./Lanakarya construction_files/jquery-3.7.1.min.js.download"></script>
+<script src="./Lanakarya construction_files/lightbox.min.js.download"></script>
+
+<script>
+    // Opsi tambahan untuk Lightbox
+    lightbox.option({
+      'resizeDuration': 200,
+      'wrapAround': true,
+      'alwaysShowNavOnTouchDevices': true,
+      'albumLabel': "Gambar %1 dari %2"
+    })
+</script>
+
+
+</div></div><div id="lightboxOverlay" tabindex="-1" class="lightboxOverlay" style="display: none;"></div><div id="lightbox" tabindex="-1" class="lightbox" style="display: none;"><div class="lb-outerContainer"><div class="lb-container"><img class="lb-image" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" alt=""><div class="lb-nav"><a class="lb-prev" role="button" tabindex="0" aria-label="Previous image" href="https://lanakaryaconstruction.github.io/"></a><a class="lb-next" role="button" tabindex="0" aria-label="Next image" href="https://lanakaryaconstruction.github.io/"></a></div><div class="lb-loader"><a class="lb-cancel" role="button" tabindex="0"></a></div></div></div><div class="lb-dataContainer"><div class="lb-data"><div class="lb-details"><span class="lb-caption"></span><span class="lb-number"></span></div><div class="lb-closeContainer"><a class="lb-close" role="button" tabindex="0"></a></div></div></div></div></body></html>
