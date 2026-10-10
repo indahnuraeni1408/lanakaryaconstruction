@@ -829,7 +829,9 @@
         easing: 'ease-in-out',
         offset: 100
     });
-
+window.addEventListener('load', function () {
+    AOS.refreshHard();
+});
     const langSwitch = document.getElementById('langSwitch');
     const elements = document.querySelectorAll('[data-en]');
     const waFloat = document.querySelector('.whatsapp-float');
